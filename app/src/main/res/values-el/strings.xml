@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ονομασία Εφαρμογής</string>
+    <string name="app_name_content">Κουίζ</string>
+    <string name="about">Σχετικά με</string>
+    <string name="app_items_title">Πληροφορίες εφαρμογής</string>
+    <string name="app_license">Άδεια Χρήσης</string>
+    <string name="app_source">Πηγαίος Κώδικας</string>
+    <string name="app_version">Έκδοση</string>
+    <string name="are_you_sure_close">Θέλετε να κλείσετε την εφαρμογή</string>
+    <string name="closing">Κλείνοντας την εφαρμογή</string>
+    <string name="dev_brand">Ανάπτυξη</string>
+    <string name="dev_email">Ηλεκτρονικό Ταχυδρομείο</string>
+    <string name="dev_items_title">Πληροφορίες Προγραμματιστή</string>
+    <string name="dev_site">Ιστοσελίδα</string>
+    <string name="exit">Έξοδος</string>
+    <string name="history">Ιστορικό</string>
+    <string name="no">Όχι</string>
+    <string name="ok">ΟΚ</string>
+    <string name="play">Έναρξη Παιχνιδιού</string>
+    <string name="yes">Ναι</string>
+    <string name="your_rank_is">Ο βαθμός σας είναι</string>
+    <string name="passed">ΠΕΡΑΣΕΣ</string>
+    <string name="failed">ΚΟΠΗΚΕΣ</string>
+    <string name="data_version">Ημερομηνία Έκδοσης Δεδομένων</string>
+    <string name="no_questions">Δεν υπάρχουν ερωτήσεις</string>
+    <string name="no_questions_message">Δεν υπάρχουν ερωτήσεις για αυτό το μάθημα ! Παρακαλώ επιλέξτε άλλο μάθημα !</string>
+    <string name="fatal_error">Σφάλμα</string>
+    <string name="fatal_error_msg">Δεν μπορούμε να διαβάσουμε τις ερωτήσεις ! Παρακαλώ επικοινωνίστε με τον προγραμματιστή !</string>
+    <string name="you_played_the_lesson">Έπαιξες στο μάθημα</string>
+    <string name="and_you">και</string>
+    <string name="with_rank">με βαθμό</string>
+    <string name="give_up">Σταματάτε ήδη;</string>
+    <string name="give_up_message">Θέλετε να σταματήσετε το παιχνίδι?</string>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">App Name</string>
+    <string name="app_name_content">Quiz</string>
+    <string name="app_items_title">App Info</string>
+    <string name="app_version">Version</string>
+    <string name="app_license">License</string>
+    <string name="app_license_content" translatable="false">MIT License</string>
+    <string name="app_license_url_content" translatable="false">https://raw.githubusercontent.com/IEEE-TEICM-SB/QuizAndroidClient/master/LICENSE</string>
+    <string name="app_source">Source Code</string>
+    <string name="app_source_content" translatable="false">https://github.com/IEEE-TEICM-SB/QuizAndroidClient</string>
+    <string name="dev_items_title">Developer Info</string>
+    <string name="dev_brand">Developer</string>
+    <string name="dev_brand_content" translatable="false">IEEE Student Branch\nTEI of Central Macedonia</string>
+    <string name="dev_facebook" translatable="false">Facebook</string>
+    <string name="dev_facebook_content" translatable="false">https://www.facebook.com/IEEE-Student-Branch-TEI-Of-Central-Macedonia-232014553831587/</string>
+    <string name="dev_twitter" translatable="false">Twitter</string>
+    <string name="dev_twitter_content" translatable="false">https://twitter.com/IeeeTeiCm</string>
+    <string name="dev_youtube" translatable="false">YouTube</string>
+    <string name="dev_youtube_content" translatable="false">https://www.youtube.com/channel/UCL5HBLikQJIAoKiyew8qx9Q/featured</string>
+    <string name="dev_site">Site</string>
+    <string name="dev_site_content" translatable="false">http://ieee.teicm.gr</string>
+    <string name="dev_email">e-Mail</string>
+    <string name="dev_email_content" translatable="false">ieee@teicm.gr</string>
+    <string name="closing">Closing the app</string>
+    <string name="are_you_sure_close">You want close the app</string>
+    <string name="play">Play</string>
+    <string name="history">History</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="your_rank_is">Your rank is</string>
+    <string name="passed">PASSED</string>
+    <string name="failed">FAILED</string>
+    <string name="question" translatable="false">Question</string>
+    <string name="pass_fail" translatable="false">Pass/Fail</string>
+    <string name="logo" translatable="false">Logo</string>
+    <string name="data_version">Version of Data</string>
+    <string name="no_questions">No Questions</string>
+    <string name="no_questions_message">This lesson has not questions ! Please select other lesson !</string>
+    <string name="service_url" translatable="false">https://ouranos.jnksoftware.eu/quizData/document.json</string>
+    <string name="service_url_version" translatable="false">https://ouranos.jnksoftware.eu/quizData/version.json</string>
+    <string name="fatal_error">Fatal Error</string>
+    <string name="fatal_error_msg">Sorry, we can\'t load the questions ! Please contact with developer !</string>
+    <string name="you_played_the_lesson">You played the lesson</string>
+    <string name="and_you">and you</string>
+    <string name="with_rank">with rank</string>
+    <string name="Exclamation" translatable="false">!</string>
+    <string name="build" translatable="false">Build</string>
+    <string name="give_up">Give up already ?</string>
+    <string name="give_up_message">You want to give up ?</string>
+    <string name="fileName" translatable="false">data.dat</string>
+    <string name="cant_add_history">Can\'t add history record</string>
+    <string name="cant_add_history_msg">We can\'t add the history record !</string>
+</resources>
