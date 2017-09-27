@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -31,7 +32,7 @@ public class Menu extends AppCompatActivity {
     // Define UI objects
     private ImageView gameLogo;
     private ListView menuList;
-    private TextView miniAbout;
+    private TextView buildField;
 
     // Define Logic objects
     private GameEngine gameEngine;
@@ -44,10 +45,22 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        // Set toolbar
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayUseLogoEnabled(true);
+            getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+            getSupportActionBar().setTitle(
+                    getString(R.string.menu) + " | " + getString(R.string.app_name_content)
+            );
+        }
+
+
         // Init UI objects
         gameLogo = (ImageView) findViewById(R.id.gameLogo);
         menuList = (ListView) findViewById(R.id.menuList);
-        miniAbout = (TextView) findViewById(R.id.miniAboutField);
+        buildField = (TextView) findViewById(R.id.buildField);
 
         // Init Logic objects
         gameEngine = new GameEngine();
@@ -75,7 +88,7 @@ public class Menu extends AppCompatActivity {
         // Set UI objects
         gameLogo.setImageResource(R.drawable.logo);
         menuList.setAdapter(menuAdapter);
-        miniAbout.setText(getString(R.string.build) + " " + BuildConfig.VERSION_NAME);
+        buildField.setText(getString(R.string.build) + " " + BuildConfig.VERSION_NAME);
 
         // Load supported menu items
         supportedIMenuItems.add(new PlayItem());

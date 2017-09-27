@@ -32,4 +32,10 @@
     <string name="with_rank">με βαθμό</string>
     <string name="give_up">Σταματάτε ήδη;</string>
     <string name="give_up_message">Θέλετε να σταματήσετε το παιχνίδι?</string>
+    <string name="cant_add_history">Πρόβλημα εγγραφής ιστορικού</string>
+    <string name="cant_add_history_msg">Δεν μπορούμε να προσθέσουμε την εγγραφή στο ιστορικό</string>
+    <string name="menu">Κεντρικό Μενού</string>
+    <string name="select_semester_and_lesson">Επιλογή Εξαμήνου και Μαθήματος</string>
+    <string name="question">Ερώτηση</string>
+    <string name="results">Αποτελέσματα</string>
 </resources>

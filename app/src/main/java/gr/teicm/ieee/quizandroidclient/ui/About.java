@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,23 +22,30 @@ public class About extends AppCompatActivity {
 
     private String dataVersion;
     private List<String> aboutItems;
-    private ArrayAdapter<String> aboutAdapter;
+    private CustomAboutAdapter aboutAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
+        // Set toolbar
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayUseLogoEnabled(true);
+            getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+            getSupportActionBar().setTitle(
+                    getString(R.string.about)
+            );
+        }
+
         dataVersion = getIntent().getStringExtra("dataVersion");
 
         ListView aboutList = (ListView) findViewById(R.id.aboutList);
 
         aboutItems = new ArrayList<>();
-        aboutAdapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1,
-                aboutItems
-        );
+        aboutAdapter = new CustomAboutAdapter(this, aboutItems);
 
         aboutList.setAdapter(aboutAdapter);
 
@@ -45,7 +53,7 @@ public class About extends AppCompatActivity {
         aboutList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //
+
                 boolean found;
                 // Here we will save our url
                 String url;

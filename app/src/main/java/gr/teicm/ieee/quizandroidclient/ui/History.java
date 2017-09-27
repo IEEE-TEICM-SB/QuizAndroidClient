@@ -1,8 +1,8 @@
 package gr.teicm.ieee.quizandroidclient.ui;
 
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,19 +15,30 @@ import gr.teicm.ieee.quizandroidclient.logic.HistoryRecord;
 public class History extends AppCompatActivity {
 
     private List<String> historyItems;
-    private CustomAdapter historyAdapter;
+    private CustomHistoryAdapter historyAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
+        // Set toolbar
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayUseLogoEnabled(true);
+            getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+            getSupportActionBar().setTitle(
+                    getString(R.string.history)
+            );
+        }
+
         GameEngine gameEngine = (GameEngine) getIntent().getSerializableExtra("gameEngine");
 
         final ListView historyList = (ListView) findViewById(R.id.historyView);
 
         historyItems = new ArrayList<>();
-        historyAdapter = new CustomAdapter(this, historyItems);
+        historyAdapter = new CustomHistoryAdapter(this, historyItems);
         historyList.setAdapter(historyAdapter);
 
         final List<HistoryRecord> historyRecords = gameEngine.getHistory();

@@ -33,14 +33,14 @@
     <string name="your_rank_is">Your rank is</string>
     <string name="passed">PASSED</string>
     <string name="failed">FAILED</string>
-    <string name="question" translatable="false">Question</string>
+    <string name="question">Question</string>
     <string name="pass_fail" translatable="false">Pass/Fail</string>
     <string name="logo" translatable="false">Logo</string>
     <string name="data_version">Version of Data</string>
     <string name="no_questions">No Questions</string>
     <string name="no_questions_message">This lesson has not questions ! Please select other lesson !</string>
-    <string name="service_url" translatable="false">https://ouranos.jnksoftware.eu/quizData/document.json</string>
-    <string name="service_url_version" translatable="false">https://ouranos.jnksoftware.eu/quizData/version.json</string>
+    <string name="service_url" translatable="false">https://ouranos.jnksoftware.eu/QuizManagerAndBuilder/public/document.json</string>
+    <string name="service_url_version" translatable="false">https://ouranos.jnksoftware.eu/QuizManagerAndBuilder/public/version.json</string>
     <string name="fatal_error">Fatal Error</string>
     <string name="fatal_error_msg">Sorry, we can\'t load the questions ! Please contact with developer !</string>
     <string name="you_played_the_lesson">You played the lesson</string>
@@ -51,6 +51,10 @@
     <string name="give_up">Give up already ?</string>
     <string name="give_up_message">You want to give up ?</string>
     <string name="fileName" translatable="false">data.dat</string>
-    <string name="cant_add_history">Can\'t add history record</string>
+    <string name="cant_add_history">History Record Error</string>
     <string name="cant_add_history_msg">We can\'t add the history record !</string>
+    <string name="history_record" translatable="false">HistoryRecord</string>
+    <string name="menu">Main Menu</string>
+    <string name="select_semester_and_lesson">Semester and Lesson Selector</string>
+    <string name="results">Results</string>
 </resources>

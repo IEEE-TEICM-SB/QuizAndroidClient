@@ -19,16 +19,16 @@ import gr.teicm.ieee.quizandroidclient.R;
  * Date: 26/9/2017
  * License: Apache License 2.0
  */
-class CustomAdapter extends ArrayAdapter<String> {
+class CustomHistoryAdapter extends ArrayAdapter<String> {
 
     private final Activity context;
-    private final List<String> strings;
+    private final List<String> historyRecords;
 
-    public CustomAdapter(Activity context, List<String> strings) {
-        super(context, R.layout.row_item, strings);
+    public CustomHistoryAdapter(Activity context, List<String> historyRecords) {
+        super(context, R.layout.row_item, historyRecords);
 
         this.context = context;
-        this.strings = strings;
+        this.historyRecords = historyRecords;
     }
 
     @NonNull
@@ -47,8 +47,8 @@ class CustomAdapter extends ArrayAdapter<String> {
             viewHolder = (ViewHolderItem) view.getTag();
         }
 
-        viewHolder.content.setText(strings.get(position));
-        viewHolder.content.setBackgroundColor(getColor(strings.get(position).contains(context.getString(R.string.passed))));
+        viewHolder.content.setText(historyRecords.get(position));
+        viewHolder.content.setBackgroundColor(getColor(historyRecords.get(position).contains(context.getString(R.string.passed))));
 
         return view;
     }

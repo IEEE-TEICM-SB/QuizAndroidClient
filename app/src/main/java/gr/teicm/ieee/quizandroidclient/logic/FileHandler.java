@@ -12,7 +12,7 @@ import java.io.ObjectOutputStream;
  * Date: 25/9/2017
  * License: MIT License
  */
-public class FileHandler {
+class FileHandler {
 
     public void saveFile(Object objectForSave, FileOutputStream fos) throws IOException {
         ObjectOutputStream oos;
